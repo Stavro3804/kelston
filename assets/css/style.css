@@ -368,24 +368,6 @@ a {
   gap: 40px;
 }
 
-.search-wrapper {
-  max-width: 300px;
-}
-
-.search-bar {
-  outline: none;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  height: 40px;
-  font-size: 16px;
-  width: 340px;
-  padding-left: 10px;
-}
-
-.search-bar:focus {
-  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.3);
-}
-
 .footer-btn {
   filter: brightness(0) invert(27%) sepia(92%) saturate(7499%)
     hue-rotate(358deg) brightness(95%) contrast(106%);
@@ -395,4 +377,54 @@ a {
 }
 .footer-6 {
   padding-top: 40px;
+}
+.test-1 {
+  height: 580.66px;
+}
+
+.test-card {
+  display: flex;
+}
+.test-card-text {
+  width: 580px;
+}
+.test-card-img {
+  padding-right: 55px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.test-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  padding: 0 60px; /* Gives space for arrows */
+  box-sizing: border-box;
+}
+
+/* Optional: slight right offset to match your screenshot */
+.max-w-4xl {
+  margin-left: auto;
+  margin-right: 10%; /* Adjust this % to move it more/less to the right */
+  /* Or use margin-left: 15%; for stronger right bias */
+}
+
+/* Dots styling */
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dot.active {
+  background: white;
+  width: 12px;
+  height: 12px;
 }
