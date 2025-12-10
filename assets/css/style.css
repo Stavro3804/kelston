@@ -112,7 +112,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 156px;
+  padding-bottom: 22px;
 }
 .banner-image {
   background-image: url("/assets/images/bg-1.png");
@@ -519,7 +519,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  /* tweak opacity as needed */
+
   z-index: 1;
 }
 
