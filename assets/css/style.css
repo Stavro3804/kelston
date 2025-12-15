@@ -57,7 +57,7 @@ a {
 }
 
 .list-unstyled {
-  font-size: 14px;
+  font-size: 9px;
 }
 
 main {
@@ -342,7 +342,7 @@ main {
 }
 
 .choose-list {
-  font-size: large;
+  font-size: small;
   padding-left: 10px;
 }
 
@@ -378,6 +378,8 @@ main {
   background-image: url(/assets/images/S4_bg.png);
   background-size: cover;
   background-position: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .bg-trusted button {
@@ -411,15 +413,23 @@ main {
    ============================================ */
 
 .sat-1 {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  width: 100%;
+  max-width: 450px;
+  overflow-wrap: break-word;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.sat-4 {
+  width: 100%;
+  max-width: 317px;
+  overflow-wrap: break-word;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .sat-2 {
-  font-weight: 600;
-  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .sat-3 {
@@ -430,13 +440,16 @@ main {
   line-height: 29.611px;
   letter-spacing: 1.17px;
 }
-
+.sat-5 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 260px;
+}
 .trusted-box-heading {
   font-weight: 700;
 }
-
-.trusted-box-text {
-  width: 315px;
+.sat-6 {
+  width: 230px;
 }
 
 /* ============================================
@@ -454,19 +467,14 @@ main {
   overflow: hidden;
 }
 .mySwiper {
-  position: absolute !important;
-  inset: 0 5% 0 auto;
+  /* position: absolute !important;
+  inset: 0 5% 0 auto; */
   max-width: 600px;
   width: calc(100% - 10%);
   height: 100%;
   z-index: 10;
 }
-@media (min-width: 1600px) {
-  .mySwiper {
-    inset: 0 8% 0 auto;
-    max-width: 650px;
-  }
-}
+
 @media (max-width: 768px) {
   .bg-image {
     min-height: 90vh;
@@ -492,7 +500,6 @@ main {
 
 .swiper-button-prev img,
 .swiper-button-next img {
-  /* display: block !important; */
   width: auto;
   height: auto;
 }
@@ -500,8 +507,7 @@ main {
 .custom-prev {
   inset: 1em 1em 1em 1em;
 }
-.custom-next {
-}
+
 .test-heading {
   padding-top: 6rem;
 }
@@ -556,6 +562,17 @@ main {
   background: #ff6b35;
   transform: scale(1.2);
 }
+@media (width: 1024px) {
+  .test-heading img {
+    padding-right: 76px;
+  }
+}
+@media (width: 425px) {
+  .test-heading img {
+    padding-right: 93px;
+  }
+}
+
 /* ============================================
    FAQ / ACCORDION SECTION
    ============================================ */
@@ -681,7 +698,7 @@ main {
    ============================================ */
 
 .footer-1 {
-  background: linear-gradient(to bottom, #000000, #ff4501);
+  background: linear-gradient(to bottom, #000000, #e65c00);
   color: #ffffff;
   margin-top: 90px;
 }
@@ -717,6 +734,7 @@ main {
 
 .logo-footer {
   padding-bottom: 24px;
+  height: 75px;
 }
 
 .footer-3 li {
@@ -768,4 +786,8 @@ main {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+}
+.footer-7 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
